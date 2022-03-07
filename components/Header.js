@@ -9,7 +9,7 @@ import { Avatar, IconButton, MenuItem } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import Link from "./Link";
 
-export default function header() {
+export default function Header() {
    const [anchorEl, setAnchorEl] = useState(null);
 
    return (
