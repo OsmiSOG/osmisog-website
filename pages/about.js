@@ -1,4 +1,4 @@
-import { Box, Divider, Paper, Stack, styled, Typography } from "@mui/material";
+import { Box, Container, Divider, Paper, Stack, styled, Typography } from "@mui/material";
 import Head from "next/head";
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -44,29 +44,33 @@ export default function about() {
                <Typography variant="h5">
                   Mis Habilidades
                </Typography>
-               <Typography>
-                  Dentro de mis hablidades en el desarrollo cuento con conocimientos en:
-               </Typography>
-               <Stack direction="row" divider={<Divider orientation="vertical" flexItem/>} spacing={2}>
-                  <Item>PHP</Item>
-                  <Item>Java</Item>
-                  <Item>JavaScript</Item>
-                  <Item>Laravel</Item>
-                  <Item>Vue</Item>
-                  <Item>React</Item>
-                  <Item>MySql</Item>
-               </Stack>
+               <Container>
+                  <Typography>
+                     Dentro de mis hablidades en el desarrollo cuento con conocimientos en:
+                  </Typography>
+                  <Stack direction={{xs: 'column', sm: 'row'}} divider={<Divider orientation="vertical" flexItem/>} spacing={2}>
+                     <Item>PHP</Item>
+                     <Item>Java</Item>
+                     <Item>JavaScript</Item>
+                     <Item>Laravel</Item>
+                     <Item>Vue</Item>
+                     <Item>React</Item>
+                     <Item>MySql</Item>
+                  </Stack>
+               </Container>
                <br />
                <Typography variant="h5">
                   Mis Actividades
                </Typography>
-               <Stack direction="row" divider={<Divider orientation="vertical" flexItem/>} spacing={2}>
-                  <Item>Aprender</Item>
-                  <Item>Desarrollar</Item>
-                  <Item>Salir en bici</Item>
-                  <Item>Jugar VideoJuegos</Item>
-                  <Item>Ver Series y Peliculas</Item>
-               </Stack>
+               <Container>
+                  <Stack direction={{xs: 'column', sm: 'row'}} divider={<Divider orientation="vertical" flexItem/>} spacing={2}>
+                     <Item>Aprender</Item>
+                     <Item>Desarrollar</Item>
+                     <Item>Salir en bici</Item>
+                     <Item>Jugar VideoJuegos</Item>
+                     <Item>Ver Series y Peliculas</Item>
+                  </Stack>
+               </Container>
             </Box>
          </Box>
       </div>
