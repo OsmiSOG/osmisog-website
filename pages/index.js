@@ -1,11 +1,25 @@
 import { Avatar, Box, Card, CardActions, CardContent, Grid, Typography } from "@mui/material";
+import Head from "next/head";
 import React from "react";
 import Link from "../components/Link";
+import { profile } from "../data/profile";
 
-export default function Home() {
+export default function Home({about}) {
    return (
       <Box>
-         <Typography variant="h2" align="center" margin={5}>Hola, Soy Santiago Otálora</Typography>
+         <Head>
+            <title>OsmiSOG</title>
+            
+            <meta name="viewport" content="initial-scale=1, width=device-width" />
+            <meta name="description" content="Web Page portfolio about Osmi Santiago Otalora Guerrero" />
+            <meta name="keywords" content="osmi, Osmi, OsmiSOG, osmisog, osmi santiago otalora guerrero, Osmi Santiago Otalora Guerrero, Santiago Otalora, Osmi Page, Osmi Pagina" />
+            <meta name="author" content="Osmi Santiago Otalora Guerrero" />
+            <meta name="robots" content="index,follow"/>
+
+            <link rel="canonical" href="https://osmisog-website.vercel.app/"/>
+            <link rel="icon" href="/head.png" />
+         </Head>
+         <Typography variant="h2" align="center" margin={5}>Hola, Soy {about.short_name}</Typography>
          <Grid container>
             <Grid item md={6} xs={12} align="center">
                <Avatar src="/mePicture.jpg" alt="Osmi Picture"  sx={{ width: 300, height: 300 }} layout="responsive"/>
@@ -14,10 +28,7 @@ export default function Home() {
                <Card>
                   <CardContent>
                      <Typography>
-                        Soy Desarrollador de software Full Stack, apasionado por la tecnología.
-                        He desarrollado proyectos en diferentes lenguajes de programación,
-                        sin embargo he tenido mayor experiencia en PHP junto con su Freamwork Laravel,
-                        y desde el front he trabajado con Vue y React.
+                        {about.introduction}
                      </Typography>
 
                   </CardContent>
@@ -29,4 +40,12 @@ export default function Home() {
          </Grid>
       </Box>
    )
+}
+
+export async function getStaticProps() {
+   return {
+      props: {
+         about: profile
+      }
+   }
 }

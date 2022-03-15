@@ -12,7 +12,15 @@ export default function about() {
    return (
       <div>
          <Head>
-               <title>OsmiSOG - About Me</title>
+            <title>OsmiSOG - About Me</title>
+            <meta name="viewport" content="initial-scale=1, width=device-width" />
+            <meta name="description" content="Web Page portfolio about Osmi Santiago Otalora Guerrero" />
+            <meta name="keywords" content="osmi, Osmi, OsmiSOG, osmisog, osmi santiago otalora guerrero, Osmi Santiago Otalora Guerrero, Santiago Otalora, Osmi About, Sobre Osmi, quien es osmi, who is osmi" />
+            <meta name="author" content="Osmi Santiago Otalora Guerrero" />
+            <meta name="robots" content="index,follow"/>
+
+            <link rel="canonical" href="https://osmisog-website.vercel.app/about"/>
+            <link rel="icon" href="/head.png" />
          </Head>
 
          <Box sx={{marginBottom:2, paddingBottom:2}}>

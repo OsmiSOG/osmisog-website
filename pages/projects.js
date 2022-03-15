@@ -9,6 +9,14 @@ export default function projects({projects}) {
       <div>
          <Head>
             <title>OsmiSOG - Projects</title>
+            <meta name="viewport" content="initial-scale=1, width=device-width" />
+            <meta name="description" content="Web Page portfolio about projects by Osmi Santiago Otalora Guerrero" />
+            <meta name="keywords" content="osmi, Osmi, OsmiSOG, osmisog, projects, osmi santiago otalora guerrero, Osmi Santiago Otalora Guerrero, Santiago Otalora, Osmi Projects, proyectos de Osmi" />
+            <meta name="author" content="Osmi Santiago Otalora Guerrero" />
+            <meta name="robots" content="index,follow"/>
+
+            <link rel="canonical" href="https://osmisog-website.vercel.app/projects"/>
+            <link rel="icon" href="/head.png" />
          </Head>
 
          <Box>

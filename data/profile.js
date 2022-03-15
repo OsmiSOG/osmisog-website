@@ -1,7 +1,7 @@
 export const profile = {
     nickname: 'OsmiSOG',
     full_name: 'Osmi Santiago Otálora Guerrero',
-    short_name: 'Santiago Otalora',
+    short_name: 'Santiago Otálora',
     name: 'Osmi Santiago',
     last_name: 'Otalora Guerrero',
     introduction: `Soy Desarrollador de software Full Stack, apasionado por la tecnología.
