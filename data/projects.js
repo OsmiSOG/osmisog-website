@@ -26,9 +26,7 @@ export const projects = [
         img: '/pokeapi.png',
         description: `Este es uno de mis proyectos en los que he practicado y entrenado tecnologias como React y Vue,
             por lo que tengo dos versiones de este mismo proyecto, uno con cada tecnologia respectivamente,
-            en donde consumo el 
-            <Link type="link" target="_blank" href="https://pokeapi.co/"> api pokemon </Link> 
-            listandolos, y ver el detalle de cada pokemon.`,
+            en donde consumo el api pokemon listandolos, y ver el detalle de cada pokemon.`,
         links: [
             {
                 type: 'page',
